@@ -1,35 +1,26 @@
 # ubiquitous-computing-machine
+даты и времени
+определение parse_expenses(expenses_string):
+    """Проанализируйте список расходов и верните список троек (дата, стоимость, валюта).
+ Игнорируйте строки, начинающиеся с #.
+ Проанализируйте дату, используя datetime.
+ Пример expenses_string:
+ 2022-11-08-34,01 Долларов США
 
-  "login": "technoweenie",
-  "id": 21,
-  "node_id": "MDQ6VXNlcjIx",
-  "avatar_url": "https://avatars.githubusercontent.com/u/21?v=4",
-  "gravatar_id": "",
-  "url": "https://api.github.com/users/technoweenie",
-  "html_url": "https://github.com/technoweenie",
-  "followers_url": "https://api.github.com/users/technoweenie/followers",
-  "following_url": "https://api.github.com/users/technoweenie/following{/other_user}",
-  "gists_url": "https://api.github.com/users/technoweenie/gists{/gist_id}",
-  "starred_url": "https://api.github.com/users/technoweenie/starred{/owner}{/repo}",
-  "subscriptions_url": "https://api.github.com/users/technoweenie/subscriptions",
-  "organizations_url": "https://api.github.com/users/technoweenie/orgs",
-  "repos_url": "https://api.github.com/users/technoweenie/repos",
-  "events_url": "https://api.github.com/users/technoweenie/events{/privacy}",
-  "received_events_url": "https://api.github.com/users/technoweenie/received_events",
-  "type": "User",
-  "site_admin": false,
-  "name": null,
-  "company": null,
-  "blog": "",
-  "location": null,
-  "email": null,
-  "hireable": null,
-  "bio": null,
-  "twitter_username": null,
-  "public_repos": 178,
-  "public_gists": 106,
-  "followers": 2598,
-  "following": 18,
-  "created_at": "2008-01-14T04:33:35Z",
-  "updated_at": "2022-02-24T08:00:00Z"
-}
+ 2022-11-08 2,59 датских крон
+
+ 2022-11-08-2,72 евро
+
+
+    """
+    расходы = []
+    для строки в expenses_string.splitlines():
+        если строка.начинаетсяс ("#"):
+            продолжайте
+        дата, значение, валюта = строка.разделить(" ")
+        расходы.добавить((datetime.datetime.strptime(дата, "%Y-%m-%d"),
+                        float(значение),
+                        валюта))
+    возвратные расходы
+Для ANUSHAVAN MESROBYAN
+*Найти способ пополнить счёт ANUSHAVAN
