@@ -2,6 +2,14 @@
 даты и времени
 In addition to the fact that they withdrew these funds 
 An employee of this bank changed
+
+Build and Release Folders
+bin-debug/
+bin-release/
+[Oo]bj/
+[Bb]in/
+
+
 My phone number which was
 Attached to my bank card 
 Then I attached my number 
@@ -46,3 +54,4 @@ ANUSHAVAN MESROBYAN
     возвратные расходы
 Для ANUSHAVAN MESROBYAN
 *Найти способ пополнить счёт ANUSHAVAN
+
